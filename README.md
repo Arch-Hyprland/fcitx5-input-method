@@ -32,9 +32,15 @@ pacman -S fcitx5 \
           fcitx5-lua \
           fcitx5-gtk \
           fcitx5-qt \
+          fcitx5-quick \
           fcitx5-configtool \
           fcitx5-pinyin-zhwiki
 ```
+---
+```shell
+yay -S fcitx5-input-support
+```
+
 
 > 如果使用的是非桌面环境，需要配置输入法在进入窗口管理器之后的自动启动, 像 `Hyprland` 就需要在配置文件中写上这样一句
 

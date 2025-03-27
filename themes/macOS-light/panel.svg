@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><g><title>Layer 1</title><rect id="svg_1" width="39" height="39" x=".5" y=".5" fill="#f0f0f0" stroke="#adadad" rx="10"/></g></svg>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_12_5)">
+<rect width="40" height="40" rx="8" fill="#B0C8D0" fill-opacity="0.9"/>
+</g>
+<rect x="0.5" y="0.5" width="39" height="39" rx="7.5" stroke="#7DA793" stroke-opacity="0.82" stroke-linejoin="round"/>
+<defs>
+<clipPath id="clip0_12_5">
+<rect width="40" height="40" rx="8" fill="white"/>
+</clipPath>
+</defs>
+</svg>
