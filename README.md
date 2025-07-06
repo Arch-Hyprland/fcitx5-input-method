@@ -1,8 +1,8 @@
 # Linux 系统下配置 fcitx5 输入法
 
-## 中文字体
+## 📖 中文字体
 
-- archlinux 安装之后，Hyprland 窗口管理的系统是无法显示中文字体，表情等，以下是我经常使用的几种字体
+archlinux 安装之后，Hyprland 窗口管理的系统是无法显示中文字体，表情等，以下是我经常使用的几种字体
 
 - 显示中文的字体(和其他不同国家的字符)
 
@@ -22,7 +22,7 @@ yay -S ttf-fira-sans ttf-firacode-nerd
 yay -S otf-apple-fonts otf-font-awesome noto-fonts-emoji 
 ```
 
-## 输入法配置
+## 🛠 输入法安装
 
 - 首先安装最新的fcitx5 输入法框架
 
@@ -41,20 +41,21 @@ pacman -S fcitx5 \
 yay -S fcitx5-input-support
 ```
 
-
 > 如果使用的是非桌面环境，需要配置输入法在进入窗口管理器之后的自动启动, 像 `Hyprland` 就需要在配置文件中写上这样一句
 
 ```sh
 exec-once = fcitx5 --replace -d
 ```
 
-- 安装好之后就可以使用 `fcitx5-configtool` 这个工具进行配置了, 首先需要添加这个输入法
 
-![select-rime-as-default](./assets/select-rime-as-default.jpg)
+## 📚 配置 rime 输入法
 
-## 配置 rime 输入法
+> 配置好不好，先看皮肤 😄 没有好看的皮肤那是万万不能的。使用 Linux 很长时间，fcitx 真正简洁好看的皮肤没有几款，以下都是我自己修正过，符合个人喜好的版本。不喜勿喷。
 
-### 配置效果
+### MacOs 样式皮肤(macOS-dark/light)
+
+MacOs 样式的皮肤是基于 `fcitx5-theme-candlelight` 进行调整得到，主要增加了
+  翻页的图标等配置.
 
 - 黑色主题
 
@@ -64,7 +65,40 @@ exec-once = fcitx5 --replace -d
 
 ![Light](./assets/fcitx5-light.jpg)
 
+### 微信输入法样式(wechat-dark/light)
+
+微信输入法皮肤是基于 `fcitx5-theme-wechat` 进行调整得到, 主要调整了输入法透明度和一些间距和对比度配置
+
+
+- 黑色主题
+
+![微信主题暗色样式](./assets/wechat-dark.png)
+
+- 亮色主题
+
+![微信主题亮色样式](./assets/wechat-light.png)
+
+
+### 自制古典花纹样式(bamboo-dark/light)
+
+此输入法配置为完全自制, 背景花纹使用 svg 图片进行绘制，生成的配置参数为自行调整
+
+- 黑色主题
+
+![自制古典花纹暗色样式](./assets/bamboo-dark.png)
+
+- 亮色主题
+
+![自制古典花纹亮色样式](./assets/bamboo-light.png)
+
+
 ### 配置详情
+
+
+- 安装好之后就可以使用 `fcitx5-configtool` 这个工具进行配置了, 首先需要添加这个输入法
+
+![select-rime-as-default](./assets/select-rime-as-default.jpg)
+
 
 - rime 这个输入法支持基于 `yaml` 文件的各种配置. 目前市面上配置认可度比较高的有
   雾凇输入法，薄荷输入法等
@@ -127,8 +161,6 @@ sudo cp -r ${pwd}/rime-data /usr/share
 
 ## 配置输入法皮肤
 
-- 这个输入法的皮肤是基于 `fcitx5-theme-candlelight` 进行调整得到，主要增加了
-  翻页的图标等配置.
 
 - `fcitx5` 输入法主题安装之后的配置在 `/usr/share/fcitx5/themes`, 其中每一个文件夹对应一种主题
 - 如果想要新增主题只要将对应的文件夹复制到其中即可
